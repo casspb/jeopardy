@@ -1,0 +1,65 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.jeopardy-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.jeopardy-cell, .category-row {
+    background-color: #1c4b82; /* Blue background */
+    padding: 20px;
+    cursor: pointer;
+    border: 2px solid #0b2748;
+    text-align: center;
+    font-weight: bold;
+}
+
+.jeopardy-cell {
+    color: yellow; /* Yellow text for dollar amount boxes */
+    font-size: 1.5em;
+}
+
+.category-cell {
+    color: white; /* White text for category boxes */
+    font-size: 1em;
+}
+
+
+.player-scores {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.player-button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.player-button:hover {
+    background-color: #23527c;
+}
+
+.player-button span {
+    margin-left: 5px;
+}
