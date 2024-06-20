@@ -28,14 +28,15 @@ header {
     height: 80px;
     position: absolute;
     right: 20px;
+    margin-right: 40px;
 }
 
 .jeopardy-board {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 5px;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: auto;
+    margin: 0 40px;
     margin-bottom: 20px;
 }
 
@@ -46,16 +47,17 @@ header {
     border: 2px solid #0b2748;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .jeopardy-cell {
     color: yellow; /* Yellow text for dollar amount boxes */
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .category-cell {
     color: white; /* White text for category boxes */
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .player-scores {
