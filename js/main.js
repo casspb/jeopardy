@@ -3,17 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const dollarAmounts = ['$100', '$200', '$300', '$400', '$500'];
 
     const jeopardyBoard = document.getElementById('jeopardy-board');
-    const playerScores = {
-        player1: 0,
-        player2: 0,
-        player3: 0
-    };
-
-    let currentPlayer = null; // To store the current player
 
     // Create category rows
     categories.forEach(category => {
-        const categoryCell = createCell(category, 'category-row');
+        const categoryCell = createCell(category, 'category-cell');
         jeopardyBoard.appendChild(categoryCell);
     });
 
@@ -22,12 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         categories.forEach(category => {
             const dollarCell = createCell(amount, 'jeopardy-cell');
             dollarCell.addEventListener('click', function() {
-                if (currentPlayer) {
-                    // Replace with actual question handling logic if needed
-                    alert('Question for ' + amount + ' under ' + category);
-                } else {
-                    alert('Please select a player first!');
-                }
+                // Replace with actual question handling logic if needed
+                alert('Question for ' + amount + ' under ' + category);
             });
             jeopardyBoard.appendChild(dollarCell);
         });
@@ -40,24 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         cell.textContent = content;
         return cell;
     }
-
-    // Function to set the current player and highlight
-    window.setCurrentPlayer = function(playerName) {
-        currentPlayer = 'player' + playerName.replace('Player ', '');
-        document.getElementById('current-player').textContent = 'Current Player: ' + playerName;
-    };
-
-    // Event listeners for player score buttons
-    document.getElementById('player1').addEventListener('click', function() {
-        setCurrentPlayer('Player 1');
-    });
-
-    document.getElementById('player2').addEventListener('click', function() {
-        setCurrentPlayer('Player 2');
-    });
-
-    document.getElementById('player3').addEventListener('click', function() {
-        setCurrentPlayer('Player 3');
-    });
 });
+
 
