@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         categories.forEach(category => {
             const dollarCell = createCell(amount, 'jeopardy-cell');
             dollarCell.addEventListener('click', function() {
-                // Replace with actual question handling logic if needed
-                alert('Question for ' + amount + ' under ' + category);
+                // Redirect to question.html with query parameters
+                window.location.href = `questions.html?category=${encodeURIComponent(category)}&amount=${encodeURIComponent(amount)}`;
             });
             jeopardyBoard.appendChild(dollarCell);
         });
@@ -30,5 +30,3 @@ document.addEventListener('DOMContentLoaded', function() {
         return cell;
     }
 });
-
-
