@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         {
-            categories: ['Animals', 'Geography', 'Music', 'Food/Kitchen', 'Random'],
+            categories: ['Animals', 'Geography', 'Music', 'Food/Kitchen', 'Random', 'Pop Culture'],
             questions: {
                 // Add question data for this game
             }
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
          }
         },
         {
-            categories: ['Animals', 'Geography', 'Music', 'Food/Kitchen', 'Random'],
+            categories: ['Animals', 'Geography', 'Music', 'Food/Kitchen', 'Random', 'Science'],
             questions: {
                 // Add question data for this game
             }

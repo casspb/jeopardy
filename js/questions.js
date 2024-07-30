@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "$100": { question: "The most streamed genre on Spotify in 2023 by Canadians was?", answer: "Pop" },
             "$200": { question: "This former Destiny's Child singer topped the charts with 'Crazy in Love.'", answer: "Beyoncé" },
             "$300": { question: "Which singer is known for singing 'All I Want for Christmas Is You'?", answer: "Mariah Carey" },
-            "$400": { question: "Which movie is <q> Let It Go</q>  from?", answer: "Frozen" },
+            "$400": { question: "Which movie is 'Let It Go'  from?", answer: "Frozen" },
             "$500": { question: "Which artist wrote the international hit song 'Sorry'?", answer: "Justin Bieber" },
             "$600": { question: "What was the first song sung on the moon?", answer: "Happy Birthday" }
         },
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     "Music": {
         "$100": { question: "which singer is also known as rocket man? ", answer: "  Elton John" },
         "$200": { question: "toto song, whose title is a continent experienced a resurgence in popularity in 2018, what song is it? ", answer: "  Africa" },
-        "$300": { question: "which artist created the song <q> empire state of mind</q>  ? ", answer: " Jay-z " },
+        "$300": { question: "which artist created the song 'empire state of mind'  ? ", answer: " Jay-z " },
         "$400": { question: "liam, harry, zayne, nial are names from what old band? ", answer: "One Direction" },
         "$500": { question: "what band is popular in the mama mia movies, and sings Gimmie! Gimmie! Gimmie!?", answer: " ABBA" },
         "$600": { question: "whats Drakes real name?", answer: " Aubrey " }
@@ -140,7 +140,23 @@ document.addEventListener('DOMContentLoaded', function() {
         "$300": { question: "whats the shortcut for the paste function on most computers?", answer: "  Ctrl+V " },
         "$400": { question: "In chess, what direction can a bishop move? ", answer: "Diagonally" },
         "$500": { question: "what type of shark is responsible for the most attacks on humans annually? ", answer: " great white shark" },
-        "$600": { question: "which metal has the chemical symbol <q>Fe </q> ?", answer: "  iron " }
+        "$600": { question: "which metal has the chemical symbol 'Fe ' ?", answer: "  iron " }
+    },
+    "Science": {
+        "$100": { question: "this is the chemical for water ", answer: " H2O" },
+        "$200": { question: "this planet is knowas the red planet? ", answer: " Mars" },
+        "$300": { question: "The study of life is known as this", answer: "  Biology " },
+        "$400": { question: " Which is the most abundant element in the universe?  ", answer: "Hydrogen" },
+        "$500": { question: "What is the hardest natural substance on Earth?  ", answer: "Diamond" },
+        "$600": { question: "This disease, caused by the Yersinia pestis bacterium, was known as the “Black Death” in the 14th century ?", answer: "  The plague " }
+    },
+    "Pop Culture": {
+        "$100": { question: "what is the celebrity sister surname britney and jamie Lynn?  ", answer: " Spears" },
+        "$200": { question: "What movie is this line from: <q>You're going to need a bigger boat.</q>? ", answer: " Jaws" },
+        "$300": { question: "What is the name of the fictional kingdom in 'Black Panther'?", answer: "  Wakanda " },
+        "$400": { question: " Which actor played the character of Neo in 'The Matrix' trilogy?  ", answer: "Keanu Reeves" },
+        "$500": { question: "In the TV show 'The Office', what is the name of the company that the characters work for? ", answer: "Dunder Mifflin" },
+        "$600": { question: "Which reality show features the following people: Kris, Kim, Kourtney, Khloe, Kendall, and Kylie?", answer: " Keeping up with the Kardashians" }
     }
     
     };
