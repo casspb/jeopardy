@@ -4,11 +4,13 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: linear-gradient(135deg, #1c4b82, #173a67, #112c4d, #0b1d33);
+    background: linear-gradient(135deg, #1c4b82, #173a67, #112c4d, #0b1d33) no-repeat;
+    background-size: cover;
     color: #fff;
     margin: 0;
     padding: 20px;
     text-align: center;
+    min-height: 100vh;
 }
 
 header {
@@ -41,22 +43,23 @@ header {
 
 .jeopardy-cell, .category-cell {
     background-color: #1c4b82;
-    padding: 20px;
     cursor: pointer;
     border: 2px solid #0b2748;
-    text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
+    padding: 40px;
 }
 
 .jeopardy-cell {
     color: yellow;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .category-cell {
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
+
 }
 
 .player-scores {
@@ -97,16 +100,21 @@ header {
     background-color: #c9302c;
 }
 
+
 #question-container, #answer-container {
+    font-size: 3em;
     text-align: center;
-    padding: 20px;
 }
 
 #question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1c4b82;
     color: yellow;
     border: 2px solid #0b2748;
     margin-bottom: 20px;
+    height: 65vh;
 }
 
 #answer-container {

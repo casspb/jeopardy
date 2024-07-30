@@ -125,6 +125,22 @@ document.addEventListener('DOMContentLoaded', function() {
         "$400": { question: "liam, harry, zayne, nial are names from what old band? ", answer: "One Direction" },
         "$500": { question: "what band is popular in the mama mia movies, and sings Gimmie! Gimmie! Gimmie!?", answer: " ABBA" },
         "$600": { question: "whats Drakes real name?", answer: " Aubrey " }
+    },
+    "Foods/Kitchen": {
+        "$100": { question: "what utencil do you use when eating soup? ", answer: " spoon" },
+        "$200": { question: "what is the most widely consumed staple grain in the world? ", answer: "  rice" },
+        "$300": { question: "what dessert is made by baking a batter of flour, eggs, sugar, and butter, and commenly served at birthday parties?   ", answer: "  cake or cupcake " },
+        "$400": { question: "tzatziki is a greek dip containing which vegtable? ", answer: "Cucumber" },
+        "$500": { question: "plantain is an unsweet version of which fruit? ", answer: " Banana" },
+        "$600": { question: "what is the term which means your pasta still has a little bite to it?", answer: "  Al Dente " }
+    },
+    "Random": {
+        "$100": { question: "what item of clothing do you usually put on your feet, before putting on shoes? ", answer: " socks" },
+        "$200": { question: "how many colours will you find in a regular bag of m&m's? ", answer: " 6" },
+        "$300": { question: "whats the shortcut for the paste function on most computers?", answer: "  Ctrl+V " },
+        "$400": { question: "In chess, what direction can a bishop move? ", answer: "Diagonally" },
+        "$500": { question: "what type of shark is responsible for the most attacks on humans annually? ", answer: " great white shark" },
+        "$600": { question: "which metal has the chemical symbol <q>Fe </q> ?", answer: "  iron " }
     }
     
     };
