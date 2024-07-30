@@ -40,7 +40,7 @@ header {
 }
 
 .jeopardy-cell, .category-cell {
-    background-color: #1c4b82; /* Blue background */
+    background-color: #1c4b82;
     padding: 20px;
     cursor: pointer;
     border: 2px solid #0b2748;
@@ -50,12 +50,12 @@ header {
 }
 
 .jeopardy-cell {
-    color: yellow; /* Yellow text for dollar amount boxes */
+    color: yellow;
     font-size: 2em;
 }
 
 .category-cell {
-    color: white; /* White text for category boxes */
+    color: white;
     font-size: 1.5em;
 }
 
@@ -80,4 +80,49 @@ header {
 
 .player-button span {
     margin-left: 5px;
+}
+
+.next-game-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.next-game-button:hover {
+    background-color: #c9302c;
+}
+
+#question-container, #answer-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#question-container {
+    background-color: #1c4b82;
+    color: yellow;
+    border: 2px solid #0b2748;
+    margin-bottom: 20px;
+}
+
+#answer-container {
+    background-color: #173a67;
+    color: white;
+    border: 2px solid #0b2748;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
 }

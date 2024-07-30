@@ -1,32 +1,69 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const categories = ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6'];
-    const dollarAmounts = ['$100', '$200', '$300', '$400', '$500'];
+    let currentGameIndex = 0;
+    const gameData = [
+        {
+            categories: ['FSU', 'Social media', 'Films and TV', 'Fanshawe', 'Sports', 'Random'],
+            questions: {
+                // Add question data for this game
+            }
+        },
+        {
+            categories: ['Animals', 'Geography', 'Music', 'Food/Kitchen', 'Random'],
+            questions: {
+                // Add question data for this game
+            }
+        },
+        {
+            categories: ['FSU', 'Social media', 'Films and TV', 'Fanshawe', 'Sports', 'Random'],
+            questions: {
+                // Add question data for this game
+         }
+        },
+        {
+            categories: ['Animals', 'Geography', 'Music', 'Food/Kitchen', 'Random'],
+            questions: {
+                // Add question data for this game
+            }
+        }
+        // Add more game data if necessary
+    ];
 
-    const jeopardyBoard = document.getElementById('jeopardy-board');
+    function loadGame(gameIndex) {
+        const currentGame = gameData[gameIndex];
+        const categories = currentGame.categories;
+        const questions = currentGame.questions;
+        const jeopardyBoard = document.getElementById('jeopardy-board');
+        jeopardyBoard.innerHTML = '';
 
-    // Create category rows
-    categories.forEach(category => {
-        const categoryCell = createCell(category, 'category-cell');
-        jeopardyBoard.appendChild(categoryCell);
-    });
-
-    // Create dollar amount rows
-    dollarAmounts.forEach(amount => {
+        // Create category cells
         categories.forEach(category => {
-            const dollarCell = createCell(amount, 'jeopardy-cell');
-            dollarCell.addEventListener('click', function() {
-                // Redirect to question.html with query parameters
-                window.location.href = `questions.html?category=${encodeURIComponent(category)}&amount=${encodeURIComponent(amount)}`;
-            });
-            jeopardyBoard.appendChild(dollarCell);
+            const categoryCell = createCell(category, 'category-cell');
+            jeopardyBoard.appendChild(categoryCell);
         });
-    });
 
-    // Function to create a cell with specified content and class
+        // Create question cells
+        for (let amount of ['$100', '$200', '$300', '$400', '$500', '$600']) {
+            categories.forEach(category => {
+                const dollarCell = createCell(amount, 'jeopardy-cell');
+                dollarCell.addEventListener('click', function() {
+                    window.location.href = `questions.html?category=${encodeURIComponent(category)}&amount=${encodeURIComponent(amount)}`;
+                });
+                jeopardyBoard.appendChild(dollarCell);
+            });
+        }
+    }
+
     function createCell(content, className) {
         const cell = document.createElement('div');
         cell.classList.add(className);
         cell.textContent = content;
         return cell;
     }
+
+    document.getElementById('next-game').addEventListener('click', function() {
+        currentGameIndex = (currentGameIndex + 1) % gameData.length;
+        loadGame(currentGameIndex);
+    });
+
+    loadGame(currentGameIndex);  // Load the first game on page load
 });
