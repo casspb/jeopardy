@@ -167,7 +167,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const answerText = document.getElementById('answer-text');
     const answerContainer = document.getElementById('answer-container');
 
-    // Display the question and answer based on the category and amount
     if (category && amount && questionsData[category] && questionsData[category][amount]) {
         const { question, answer } = questionsData[category][amount];
         questionText.textContent = question;
@@ -176,8 +175,14 @@ document.addEventListener('DOMContentLoaded', function() {
         questionText.textContent = 'No question available.';
     }
 
-    // Show the answer when the page is clicked
     document.body.addEventListener('click', function() {
         answerContainer.classList.remove('hidden');
     });
+
+    // Update clicked cells
+    if (category && amount) {
+        const clickedCells = JSON.parse(localStorage.getItem('clickedCells')) || {};
+        clickedCells[`${category}-${amount}`] = true;
+        localStorage.setItem('clickedCells', JSON.stringify(clickedCells));
+    }
 });
