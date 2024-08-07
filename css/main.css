@@ -20,11 +20,11 @@ header {
 }
 
 .jeopardy-logo {
-    height: 100px;
+    height: 6em;
 }
 
 .fsu-logo {
-    height: 90px;
+    height: 6em;
     position: absolute;
     right: 20px;
     margin-right: 40px;
@@ -44,28 +44,49 @@ header {
 
 .next-game-button, .refresh-game-button {
     padding: 10px 20px;
+    font-size: 1.5em;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    font-weight: bold;
+    border: 1px solid #ffffff7b;
 }
 
 .next-game-button {
-    background-color: #d9534f;
+    background-color: #ce070b;
     color: #fff;
 }
 
 .next-game-button:hover {
-    background-color: #c9302c;
+    background-color: #ff0e12;
 }
 
 .refresh-game-button {
-    background-color: #d9534f; /* Matching color to next-game-button */
+    background-color: #ce070b; /* Matching color to next-game-button */
     color: #fff;
 }
 
 .refresh-game-button:hover {
-    background-color: #c9302c; /* Darker shade on hover */
+    background-color: #ff0e12; /* Darker shade on hover */
+}
+
+.player-button {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #ce070b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 1px solid #ffffff7b;
+}
+
+.player-button:hover {
+    background-color: #ff0e12;
+}
+
+.player-button span {
+    margin-left: 5px;
 }
 
 .jeopardy-board {
@@ -103,22 +124,6 @@ header {
     margin-top: 20px;
 }
 
-.player-button {
-    background-color: #337ab7;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.player-button:hover {
-    background-color: #23527c;
-}
-
-.player-button span {
-    margin-left: 5px;
-}
 
 .hidden-cell {
     background-color: #888;
