@@ -4,9 +4,7 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: linear-gradient(135deg, #1c4b82, #173a67, #112c4d, #0b1d33) no-repeat;
-    background-size: cover;
-    color: #fff;
+    background-image: url(../images/FSU24-pattern-red.jpg);
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -22,14 +20,52 @@ header {
 }
 
 .jeopardy-logo {
-    height: 80px;
+    height: 100px;
 }
 
 .fsu-logo {
-    height: 80px;
+    height: 90px;
     position: absolute;
     right: 20px;
     margin-right: 40px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px ;
+    margin-left: 40px;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.next-game-button, .refresh-game-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.next-game-button {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.next-game-button:hover {
+    background-color: #c9302c;
+}
+
+.refresh-game-button {
+    background-color: #d9534f; /* Matching color to next-game-button */
+    color: #fff;
+}
+
+.refresh-game-button:hover {
+    background-color: #c9302c; /* Darker shade on hover */
 }
 
 .jeopardy-board {
@@ -42,7 +78,7 @@ header {
 }
 
 .jeopardy-cell, .category-cell {
-    background-color: #1c4b82;
+    background-color: #212528;
     cursor: pointer;
     border: 2px solid #0b2748;
     font-weight: bold;
@@ -52,14 +88,13 @@ header {
 }
 
 .jeopardy-cell {
-    color: yellow;
+    color: #ffc107;
     font-size: 2.5em;
 }
 
 .category-cell {
-    color: white;
+     color: #fff;
     font-size: 2em;
-
 }
 
 .player-scores {
@@ -85,21 +120,11 @@ header {
     margin-left: 5px;
 }
 
-.next-game-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #d9534f;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
+.hidden-cell {
+    background-color: #888;
+    color: #555;
+    cursor: not-allowed;
 }
-
-.next-game-button:hover {
-    background-color: #c9302c;
-}
-
 
 #question-container, #answer-container {
     font-size: 3em;
@@ -134,3 +159,6 @@ a.back-link {
 a.back-link:hover {
     text-decoration: underline;
 }
+
+
+
