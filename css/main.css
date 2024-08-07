@@ -49,6 +49,7 @@ header {
     cursor: pointer;
     text-transform: uppercase;
     border: 1px solid #ffffff7b;
+    border-radius: 0.25em;
 }
 
 .next-game-button {
@@ -94,7 +95,7 @@ header {
     grid-template-columns: repeat(6, 1fr);
     gap: 5px;
     max-width: auto;
-    margin: 0 40px;
+    margin: 0 30px;
     margin-bottom: 20px;
 }
 
@@ -110,12 +111,12 @@ header {
 
 .jeopardy-cell {
     color: #ffc107;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .category-cell {
      color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .player-scores {
@@ -134,13 +135,14 @@ header {
 #question-container, #answer-container {
     font-size: 3em;
     text-align: center;
+    border-radius: 0.25em;
 }
 
 #question-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1c4b82;
+    background-color: #212528;
     color: yellow;
     border: 2px solid #0b2748;
     margin-bottom: 20px;
@@ -148,7 +150,7 @@ header {
 }
 
 #answer-container {
-    background-color: #173a67;
+    background-color: #212528;
     color: white;
     border: 2px solid #0b2748;
 }
