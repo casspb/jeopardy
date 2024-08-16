@@ -96,7 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
         loadGame(currentGameIndex);
     });
 
+   
     document.getElementById('refresh-game').addEventListener('click', function() {
+        // Get the audio element
+        const audio = document.getElementById('game-audio');
+
         localStorage.removeItem('clickedCells'); // Clear the clicked cells
         localStorage.removeItem('score1');
         localStorage.removeItem('score2');
@@ -108,8 +112,10 @@ document.addEventListener('DOMContentLoaded', function() {
         score1Elem.textContent = score1;
         score2Elem.textContent = score2;
         score3Elem.textContent = score3;
-    });
 
+        // Play the audio when the button is clicked
+        audio.play();
+    });
     // Load the current game
     loadGame(currentGameIndex);
 });
