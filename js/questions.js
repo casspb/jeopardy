@@ -177,6 +177,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.body.addEventListener('click', function() {
         answerContainer.classList.remove('hidden');
+        const audio = document.getElementById('correct-audio');
+        audio.play();
     });
 
     // Update clicked cells
