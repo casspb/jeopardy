@@ -1,10 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Get URL parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
-    const amount = urlParams.get('amount');
+(() => {
+    // Selecting elements
+    const categoryElement = document.querySelector('#category');
+    const amountElement = document.querySelector('#amount');
+    const questionText = document.querySelector('#question-text');
+    const answerText = document.querySelector('#answer-text');
+    const answerContainer = document.querySelector('#answer-container');
 
-    // Question and answer data
+    // Fetching the 'category' and 'amount' from the selected elements using a ternary operator
+    const pageCategory = categoryElement ? categoryElement.textContent : null;
+    const pageAmount = amountElement ? amountElement.textContent : null;
+    
     const questionsData = {
         "FSU": {
             "$100": { question: "What does the FSU stand for?", answer: "Fanshawe Student Union" },
@@ -22,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "$500": { question: "This feature on Twitter allows users to share someone else's tweet on their own timeline.", answer: "Retweet" },
             "$600": { question: "This term refers to a social media post designed to attract engagement through controversy or humor.", answer: "Clickbait" }
         },
-        "Films and TV": {
+        "Films and shows": {
             "$100": { question: "This animated TV show, created by Matt Groening, features the Simpson family.", answer: "The Simpsons" },
             "$200": { question: "This actor won an Oscar for his role in Forrest Gump.", answer: "Tom Hanks" },
             "$300": { question: "This 2012 superhero film, directed by Joss Whedon, assembles characters like Iron Man, Thor, and Captain America.", answer: "The Avengers" },
@@ -62,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "$500": { question: "This bird has the ability to fly backwards and hover in mid-air, thanks to its unique wing structure.", answer: "Hummingbird" },
             "$600": { question: "This legendary bird is said to rise from its own ashes after death and is referenced in Harry Potter.", answer: "Phoenix" }
         },
-        "Geography": {
+        "location": {
             "$100": { question: "This is the largest ocean in the world.", answer: "Pacific Ocean" },
             "$200": { question: "This continent is home to the Sahara Desert.", answer: "Africa" },
             "$300": { question: "The capital of Canada, known for its Winterlude festival, is this city.", answer: "Ottawa" },
@@ -86,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "$500": { question: "Sourdough is a type of which food?", answer: "Bread" },
             "$600": { question: "Gnocchi are small potato dumplings from which country?", answer: "Italy" }
         },
-        "FSU": {
+        "Fanshawe Student Union": {
             "$100": { question: "Who is the FSU Finance Coordinator?", answer: "Jerry Thomas" },
             "$200": { question: "Who is the FSU Student Life Coordinator?", answer: "Sophia Mills" },
             "$300": { question: "What is the name of the FSU Esports team?", answer: "Fuel" },
@@ -94,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "$500": { question: "What is the name of the Fanshawe College event where students showcase their talents?", answer: "Fanshawe's Got Talent" },
             "$600": { question: "What is the name of the FSU podcast?", answer: "The Red Couch" }
         },
-        "Random": {
+        "this and that": {
         "$100": { question: "Which is the fastest land animal?", answer: "Cheetah" },
         "$200": { question: "Steve Harvey is a game show host. Whats that show called?", answer: "Family Feud" },
         "$300": { question: "Who is the author of the Harry Potter series?", answer: "J.K. Rowling" },
@@ -102,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "$500": { question: "He is best known for inventing the electric lightbulb.", answer: "Thomas Edison" },
         "$600": { question: "What do you call the process by which plants make their own food?", answer: "Photosynthesis" }
     },
-    "Animals": {
+    "Animal": {
         "$100": { question: "This largest rainforest in the world is home to millions of species of animals and plants.", answer: " Amazon Rainforest" },
         "$200": { question: "This arctic animal has a thick layer of blubber and dense fur to survive in freezing temperatures.", answer: "  Polar bear" },
         "$300": { question: "This term describes animals that primarily eat plants.", answer: "Herbivores" },
@@ -126,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "$500": { question: "what band is popular in the mama mia movies, and sings Gimmie! Gimmie! Gimmie!?", answer: " ABBA" },
         "$600": { question: "whats Drakes real name?", answer: " Aubrey " }
     },
-    "Foods/Kitchen": {
+    "Foods and Kitchen": {
         "$100": { question: "what utencil do you use when eating soup? ", answer: " spoon" },
         "$200": { question: "what is the most widely consumed staple grain in the world? ", answer: "  rice" },
         "$300": { question: "what dessert is made by baking a batter of flour, eggs, sugar, and butter, and commenly served at birthday parties?   ", answer: "  cake or cupcake " },
@@ -134,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "$500": { question: "plantain is an unsweet version of which fruit? ", answer: " Banana" },
         "$600": { question: "what is the term which means your pasta still has a little bite to it?", answer: "  Al Dente " }
     },
-    "Random": {
+    "Assorted": {
         "$100": { question: "what item of clothing do you usually put on your feet, before putting on shoes? ", answer: " socks" },
         "$200": { question: "how many colours will you find in a regular bag of m&m's? ", answer: " 6" },
         "$300": { question: "whats the shortcut for the paste function on most computers?", answer: "  Ctrl+V " },
@@ -161,30 +166,33 @@ document.addEventListener('DOMContentLoaded', function() {
     
     };
     
+    //connecting the question based on the category and the amount by holding the url value and making it a variable
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlCategory = urlParams.get('category');
+    const urlAmount = urlParams.get('amount');
 
-    // Get the question and answer elements
-    const questionText = document.getElementById('question-text');
-    const answerText = document.getElementById('answer-text');
-    const answerContainer = document.getElementById('answer-container');
-
-    if (category && amount && questionsData[category] && questionsData[category][amount]) {
-        const { question, answer } = questionsData[category][amount];
+    if (urlCategory && urlAmount && questionsData[urlCategory] && questionsData[urlCategory][urlAmount]) {
+        const { question, answer } = questionsData[urlCategory][urlAmount];
         questionText.textContent = question;
         answerText.textContent = answer;
     } else {
         questionText.textContent = 'No question available.';
+        answerText.textContent = '';  // Clear answer if no question
     }
 
-    document.body.addEventListener('click', function() {
+    // Show answers when clicking the screen
+    document.body.addEventListener('click', function () {
         answerContainer.classList.remove('hidden');
         const audio = document.getElementById('correct-audio');
-        audio.play();
+        if (audio) audio.play();
     });
 
-    // Update clicked cells
-    if (category && amount) {
-        const clickedCells = JSON.parse(localStorage.getItem('clickedCells')) || {};
-        clickedCells[`${category}-${amount}`] = true;
-        localStorage.setItem('clickedCells', JSON.stringify(clickedCells));
-    }
-});
+    // Add "Back to Game" link functionality but keep the current game on the screen using local storage 
+    document.querySelector('.back-link').addEventListener('click', function () {
+        const storedGameState = JSON.parse(localStorage.getItem('gameState'));
+        if (storedGameState) {
+            const { gameIndex } = storedGameState;
+            window.location.href = `index.html`;  // Navigate back to the game page
+        }
+    });
+})();
