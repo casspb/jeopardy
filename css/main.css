@@ -167,5 +167,8 @@ a.back-link:hover {
     text-decoration: underline;
 }
 
-
+.hidden-cell {
+    background-color: #d3d3d3; /* Greyed out color */
+    pointer-events: none; /* Disable clicks on the cell */
+}
 
