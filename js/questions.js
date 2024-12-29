@@ -27,7 +27,7 @@
             "$500": { question: "This feature on Twitter allows users to share someone else's tweet on their own timeline.", answer: "Retweet" },
             "$600": { question: "This term refers to a social media post designed to attract engagement through controversy or humor.", answer: "Clickbait" }
         },
-        "Films and shows": {
+        "Films and TV": {
             "$100": { question: "This animated TV show, created by Matt Groening, features the Simpson family.", answer: "The Simpsons" },
             "$200": { question: "This actor won an Oscar for his role in Forrest Gump.", answer: "Tom Hanks" },
             "$300": { question: "This 2012 superhero film, directed by Joss Whedon, assembles characters like Iron Man, Thor, and Captain America.", answer: "The Avengers" },
@@ -162,6 +162,102 @@
         "$400": { question: " Which actor played the character of Neo in 'The Matrix' trilogy?  ", answer: "Keanu Reeves" },
         "$500": { question: "In the TV show 'The Office', what is the name of the company that the characters work for? ", answer: "Dunder Mifflin" },
         "$600": { question: "Which reality show features the following people: Kris, Kim, Kourtney, Khloe, Kendall, and Kylie?", answer: " Keeping up with the Kardashians" }
+    },
+    "Flags":{
+        "$100": { question: "This country's flag features a red maple leaf in the centre, symbolizing the nation's nature and wilderness.", answer: "Canada" },
+        "$200": { question: "The flag of this country has a red circle in the centre on a white background, symbolizing the sun.",  answer: "Japan" },
+        "$300": { question: "The flag of this country features a white crescent moon and a star on a green background.",  answer: "Pakistan" },
+        "$400": { question: "This country's flag consists of three horizontal stripes, saffron at the top, white in the middle, and green at the bottom, along with a navy blue wheel with 24 spokes in the centre.", answer: "India" },
+        "$500": { question: "This country's flag features a golden eagle in the centre, perched on a cactus with a snake in its beak.",  answer: "Mexico" },
+        "$600": { question: "This flag has two golden lions, a sword, and a palm tree, all on a deep red field, representing the nation's identity and heritage.",  answer: "Sri Lanka" }
+    },
+    "Biology":{
+        "$100": { question: "The body's largest organ, which acts as a barrier to protect the body from pathogens and regulates temperature, is known as this.", answer: "Skin" },
+        "$200": { question: "This organ is responsible for pumping blood throughout the body and is often referred to as the body's 'engine'.", answer: "Heart" },
+        "$300": { question: "This green pigment found in plant cells is essential for photosynthesis.", answer: "Chlorophyll" },
+        "$400": { question: "The cell structure that controls what enters and exits the cell is known as the cell's 'security guard'.", answer: "Membrane" },
+        "$500": { question: "This molecule carries genetic information in living organisms and has a double-helix structure.", answer: "DNA" },
+        "$600": { question: "This type of cell division results in two genetically identical daughter cells and is crucial for growth and repair.", answer: "Mitosis" }
+    },
+    "Looking Glass":{
+        "$100": { question: "This glass you wear to help you see.", answer: "Glasses" },
+        "$200": { question: "This accessory was famously worn by the Monopoly man.", answer: "Monocle" },
+        "$300": { question: "The name of the procedure that darkens glass.", answer: "Tinting" },
+        "$400": { question: "This type of glass is seen often on church windows.", answer: "Stained glass" },
+        "$500": { question: "This type of glass can hold up to 24,000 psi.", answer: "Tempered glass" },
+        "$600": { question: "This object is referred to as a looking glass in 'Alice in Wonderland'.", answer: "Mirror" }
+    },
+    "Celebrities":{
+        "$100": { question: "This actress became famous for her role as Hermione Granger in the Harry Potter series.", answer: "Emma Watson" },
+        "$200": { question: "This actor played the role of Tony Stark, also known as Iron Man in the Marvel Cinematic Universe.", answer: "Robert Downey Jr." },
+        "$300": { question: "This singer is known for hits like 'Shape of You' and 'Perfect' and is one of the best-selling music artists of all time.", answer: "Ed Sheeran" },
+        "$400": { question: "This actor is famous for playing the character of Jack Dawson in Titanic and was later cast as the lead in The Revenant.", answer: "Leonardo DiCaprio" },
+        "$500": { question: "This actress is known for her role as Katniss Everdeen in The Hunger Games and has starred in films like Silver Linings Playbook and Joy.", answer: "Jennifer Lawrence" },
+        "$600": { question: "This actor is best known for his role as the Joker in The Dark Knight and performances in Brokeback Mountain and Dallas Buyers Club.", answer: "Heath Ledger" }
+    },
+    "Video Games":{
+        "$100": { question: "This iconic plumber first appeared in the 1985 game Super Mario Bros., where he must rescue Princess Peach from Bowser.", answer: "Mario" },
+        "$200": { question: "In this 2017 game, players explore a vast open world battling enemies and solving puzzles as the hero named Link.", answer: "The Legend of Zelda: Breath of the Wild" },
+        "$300": { question: "This 2009 game, known for its block, pixelated world, allows players to do many things in an open-world environment.", answer: "Minecraft" },
+        "$400": { question: "This 2007 game features an open world set in Liberty City, where players control a character named Niko Bellic in a gritty, crime-filled story.", answer: "Grand Theft Auto IV" },
+        "$500": { question: "This 2015 action-adventure game is set in a post-apocalyptic world where the main character, Joel, helps a girl to safety while avoiding zombie-like creatures.", answer: "The Last of Us" },
+        "$600": { question: "This game is set in a dystopian future where machines have taken over, following the journey of Aloy, a hunter trying to uncover the secrets of her past while fighting robotic creatures.", answer: "Horizon Zero Dawn" }
+    },
+    "Ocean Life":{
+        "$100": { question: "This sea creature is known for its eight arms and is famous for being very intelligent and able to change color.", answer: "Octopus" },
+        "$200": { question: "These large marine mammals are known for their long migrations and songs. They are the largest animal on Earth.", answer: "Whale" },
+        "$300": { question: "This small colorful fish is often associated with coral reefs and is known for its symbiotic relationship with sea anemones in the movie 'Nemo'.", answer: "Clownfish" },
+        "$400": { question: "This species of fish is known for its sharp spines and its ability to inflate itself as a defense mechanism.", answer: "Pufferfish" },
+        "$500": { question: "This marine animal, often called a 'sea cow', grazes on seagrasses in shallow coastal waters, and is known for its gentle nature.", answer: "Manatee" },
+        "$600": { question: "This deep-sea creature is known for its bioluminescent abilities and its odd appearance with a dangly lightbulb-like feature.", answer: "Anglerfish" }
+    },
+    "Plants":{
+        "$100": { question: "This tree is known for its distinct leaf shape and is the symbol of Canada.", answer: "Maple tree" },
+        "$200": { question: "This part of a plant anchors it to the soil and absorbs water and nutrients.", answer: "Root" },
+        "$300": { question: "This is the process by which plants make their own food using sunlight, water, and carbon dioxide.", answer: "Photosynthesis" },
+        "$400": { question: "This small flying insect is essential for pollination.", answer: "Bee" },
+        "$500": { question: "This common green plant is often kept in homes and is known for its ability to purify the air.", answer: "Spider Plant" },
+        "$600": { question: "This large tropical plant is known for its broad leaves and is the national flower of India.", answer: "Lotus" }
+    },
+    "Libraries":{
+        "$100": { question: "This person works at a library and helps you find books or check out items.", answer: "Librarian" },
+        "$200": { question: "This type of library book is usually found in the 'fiction' section but is known for being completely imaginary and totally made up.", answer: "Novel" },
+        "$300": { question: "This library item has a 'best before' date and is often checked out more than once, and has an assortment of graphics.", answer: "Comic book" },
+        "$400": { question: "This term refers to a book that is so good, you can't put it down, even in the middle of a crowded library.", answer: "Page-turner" },
+        "$500": { question: "This happens when you check out a book, then forget to return it on time.", answer: "Library fine" },
+        "$600": { question: "These creatures are often found in library books but are very rare to spot in the actual library. They may be found under beds or in your imagination.", answer: "Bookworms" }
+    },
+    "National Days":{
+        "$100": { question: "This day is known for exchanging cards, flowers, and chocolates to express affection.", answer: "Valentine's Day" },
+        "$200": { question: "This holiday is known for costumes and trick-or-treating.", answer: "Halloween" },
+        "$300": { question: "This day is filled with jokes and pranks.", answer: "April Fools" },
+        "$400": { question: "Celebrated on May 4th, by those who cherish an epic space saga.", answer: "Star Wars Day" },
+        "$500": { question: "This national day is celebrated on March 14th, and is dedicated to a delicious round treat that has the perfect ratio.", answer: "Pi Day" },
+        "$600": { question: "Celebrated on the third Monday in January, this holiday honors a man known for his 'I have a Dream' speech and his work in civil rights.", answer: "Martin Luther King Jr. Day" }
+    },
+    "Vintage Toys":{
+       "$100": { question: "This electronic handheld game, which became popular in the 1980's, later developed into more handheld game consoles.", answer: "Gameboy" },
+        "$200": { question: "This popular doll line, which debuted in 1989, featured brightly colored hair and big eyes, and they were often found wearing stylish outfits.", answer: "Polly Pockets" },
+        "$300": { question: "This toy line featured small squishy animals with distinct faces, and later developed to talk and move.", answer: "Furby" },
+        "$400": { question: "This toy was introduced in 1982, featuring small plastic creatures that could transform into vehicles or animals, and became a huge craze.", answer: "Transformers" },
+        "$500": { question: "This game is played trying to guess what is in another player's hand, using questions and logic.", answer: "Clue" },
+        "$600": { question: "These classic collectible figurines, introduced in 1981, are small, have big heads, and often feature humorous expressions.", answer: "Cabbage Patch Kids" }
+    },
+    "Fun Facts":{
+        "$100": { question: "This tiny creature is famous for its ability to glow in the dark due to bioluminescence.", answer: "Firefly" },
+        "$200": { question: "This small, cute creature sleeps in the day and is known for hanging upside down with its feet.", answer: "Bat" },
+        "$300": { question: "This 'king' of the jungle, with a famous Disney film, is known for his mighty roar and his role as the protector of the savannah.", answer: "Simba" },
+        "$400": { question: "This animal can hold its breath underwater for over an hour and is often seen as a symbol of wisdom in Chinese culture.", answer: "Otter" },
+        "$500": { question: "Humans have a special body part that's 'unique' to each individual, just like fingerprints.", answer: "Tongue" },
+        "$600": { question: "This is the only part of your body that doesn't get blood from blood vessels. This part is the clear glassy part in the front of your eye.", answer: "Cornea" }
+    },
+    "Disney Fairy Tales":{
+        "$100": { question: "In Cinderella, this object is used to prove that Cinderella is the girl from the dance.", answer: "Glass Slipper" },
+        "$200": { question: "In Sleeping Beauty, this happens when Aurora pricks her finger on the spinning wheel.", answer: "Fall to Sleep" },
+        "$300": { question: "In Aladdin, this magical object transports Aladdin and Princess Jasmine on a journey.", answer: "Magic Carpet" },
+        "$400": { question: "In The Little Mermaid, Ariel gives up her voice in exchange for something from Ursula. What does she want?", answer: "Legs" },
+        "$500": { question: "In Mulan, this is how Mulan proves her worth to the emperor and her comrades.", answer: "Saving China" },
+        "$600": { question: "This Disney film is loosely based on a German fairy tale of a girl who befriends dwarfs and is poisoned by an apple.", answer: "Snow White and the Seven Dwarfs" }
     }
     
     };
@@ -184,7 +280,10 @@
     document.body.addEventListener('click', function () {
         answerContainer.classList.remove('hidden');
         const audio = document.getElementById('correct-audio');
-        if (audio) audio.play();
+        if (audio) {
+            audio.volume = 1.0;
+            audio.play();
+        }
     });
 
     // Add "Back to Game" link functionality but keep the current game on the screen using local storage 
