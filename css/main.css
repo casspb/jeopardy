@@ -44,7 +44,7 @@ header {
 
 .next-game-button, .refresh-game-button {
     padding: 10px 20px;
-    font-size: 1.5em;
+    font-size: 1em;
     border: none;
     cursor: pointer;
     text-transform: uppercase;

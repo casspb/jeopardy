@@ -12,6 +12,12 @@
         },
         {
             categories: ['Animal', 'location', 'Music', 'Food/Kitchen', 'Random', 'Science'],
+        },
+        {
+            categories: ['Flags', 'Biology', 'Looking Glass', 'Celebrities', 'Video Games', 'Ocean Life'],
+        },
+        {
+            categories: ['Plants', 'libraries', 'National Days', 'Vintage Toys', 'Fun Facts', 'Disney Fairy Tales'],
         }
     ];
 
@@ -165,6 +171,7 @@
     
         // Play the audio when the button is clicked
         audio.play();
+     
     });
     // Load the initial game
     loadGame(currentGameIndex);
